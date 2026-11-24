@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Morgan | Student Portfolio</title>
+  <style>
+    :root{--ink:#18212f;--muted:#64748b;--brand:#6d5dfc;--soft:#f4f3ff;--line:#e8eaf0}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+    a{text-decoration:none;color:inherit}
+    .wrap{width:min(1100px,90%);margin:auto}
+    header{position:sticky;top:0;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:5}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-weight:800;font-size:1.25rem}.logo span{color:var(--brand)}
+    .links{display:flex;gap:25px;color:#475569;font-size:.94rem}
+    .links a:hover{color:var(--brand)}
+    .hero{padding:90px 0 75px;background:linear-gradient(120deg,#f5f4ff,#fff 65%)}
+    .hero-grid{display:grid;grid-template-columns:1.3fr .7fr;align-items:center;gap:50px}
+    .eyebrow{color:var(--brand);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.78rem}
+    h1{font-size:clamp(2.7rem,6vw,4.7rem);line-height:1.08;margin:15px 0}
+    h1 span{color:var(--brand)}
+    .lead{color:var(--muted);font-size:1.12rem;max-width:580px}
+    .actions{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:12px 20px;border-radius:10px;font-weight:700;background:var(--brand);color:white}
+    .btn.alt{background:white;color:var(--ink);border:1px solid var(--line)}
+    .portrait{width:min(300px,100%);aspect-ratio:1;border-radius:32px;object-fit:cover;justify-self:center;box-shadow:20px 20px 0 #dedaff}
+    section{padding:78px 0}
+    .section-head{margin-bottom:32px}.section-head p{color:var(--muted);margin-top:7px}
+    h2{font-size:2rem}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+    .about-card{background:var(--soft);padding:28px;border-radius:18px}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+    .stat{background:white;border:1px solid var(--line);border-radius:12px;padding:15px;text-align:center}
+    .stat strong{display:block;font-size:1.5rem;color:var(--brand)}
+    .skills{display:flex;flex-wrap:wrap;gap:12px}
+    .chip{background:var(--soft);color:#5145c7;padding:10px 15px;border-radius:30px;font-weight:700}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:white;transition:.2s}
+    .card:hover{transform:translateY(-5px);box-shadow:0 16px 35px #18212f12}
+    .card img{width:100%;height:175px;object-fit:cover}
+    .card-body{padding:20px}.card-body p{color:var(--muted);margin:8px 0 15px}
+    .tag{font-size:.8rem;color:var(--brand);font-weight:700}
+    .contact{background:#171d31;color:white}
+    .contact p{color:#c6ccda;max-width:600px;margin:10px 0 25px}
+    footer{padding:22px 0;text-align:center;color:#94a3b8;background:#111729;font-size:.9rem}
+    @media(max-width:760px){.links{gap:12px;font-size:.8rem}.hero-grid,.about{grid-template-columns:1fr}.portrait{grid-row:1;width:220px}.hero{padding:60px 0}.cards{grid-template-columns:1fr 1fr}}
+    @media(max-width:520px){nav{height:auto;padding:15px 0;align-items:flex-start;gap:12px;flex-direction:column}.links{flex-wrap:wrap}.cards{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}section{padding:55px 0}}
+  </style>
+</head>
+<body>
+<header><nav class="wrap"><a class="logo" href="#">Alex<span>.</span></a><div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav></header>
+<main>
+  <section class="hero"><div class="wrap hero-grid">
+    <div><div class="eyebrow">Student • Learner • Creator</div><h1>Hello, I'm Alex <span>Morgan.</span></h1><p class="lead">I’m a curious student who enjoys turning ideas into clean, useful digital experiences. I’m currently learning front-end development and building projects one step at a time.</p><div class="actions"><a class="btn" href="#projects">Explore my work</a><a class="btn alt" href="#contact">Contact me</a></div></div>
+    <img class="portrait" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=85" alt="Portrait of a student">
+  </div></section>
+  <section id="about"><div class="wrap about"><div><div class="section-head"><div class="eyebrow">A little about me</div><h2>Learning by creating.</h2></div><p>I believe the best way to learn technology is to build something real. I like exploring design, solving small problems, and improving my work with every project. My goal is to grow into a thoughtful developer who creates helpful and accessible websites.</p></div><div class="about-card"><h3>Quick highlights</h3><div class="stats"><div class="stat"><strong>03</strong><span>Projects</span></div><div class="stat"><strong>05+</strong><span>Skills</span></div><div class="stat"><strong>100%</strong><span>Curiosity</span></div></div></div></div></section>
+  <section id="skills" style="background:#fafaff"><div class="wrap"><div class="section-head"><div class="eyebrow">What I use</div><h2>My skills</h2><p>Tools and topics I’m learning and practising.</p></div><div class="skills"><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">Responsive Design</span><span class="chip">Flexbox</span><span class="chip">CSS Grid</span><span class="chip">Git & GitHub</span><span class="chip">UI Basics</span></div></div></section>
+  <section id="projects"><div class="wrap"><div class="section-head"><div class="eyebrow">Selected work</div><h2>Featured projects</h2><p>A few sample projects from my learning journey.</p></div><div class="cards">
+    <article class="card"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=700&q=80" alt="Analytics dashboard on laptop"><div class="card-body"><span class="tag">WEB DESIGN</span><h3>Study Planner</h3><p>A simple concept for organising study tasks and deadlines.</p><a href="#contact">View details →</a></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=700&q=80" alt="Laptop with code"><div class="card-body"><span class="tag">HTML & CSS</span><h3>Landing Page</h3><p>A responsive landing page focused on clear content and layout.</p><a href="#contact">View details →</a></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1559028006-448665bd7c7f?auto=format&fit=crop&w=700&q=80" alt="Creative workspace"><div class="card-body"><span class="tag">UI CONCEPT</span><h3>Campus Connect</h3><p>A student-friendly concept for sharing campus updates.</p><a href="#contact">View details →</a></div></article>
+  </div></div></section>
+  <section class="contact" id="contact"><div class="wrap"><div class="eyebrow">Let's connect</div><h2>Have an idea or opportunity?</h2><p>I’d be happy to hear from you. Replace this sample email with your own contact details before submitting.</p><a class="btn" href="mailto:alex@example.com">alex@example.com</a></div></section>
+</main><footer>© 2026 Alex Morgan • Student Portfolio Website</footer>
+</body></html>
